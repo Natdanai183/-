@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+div {
+  margin-top: 15px;
+}
+
+.mycontainer {
+  display: flex;
+}
+
+.mycontainer > div {
+  width: 33%;
+}
+
+/* แก้ไขจาก #movie-container เป็น .movie-container */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start; /* นี่คือการจัดให้อยู่ซ้าย */
+  padding-left: 20px; /* เยื้องเข้าจากซ้ายบ้าง */
+  margin-top: 30px;
+}
+
+.movie-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 150px; /* ขนาดการ์ด 150px */
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* เปลี่ยนจาก 0.5 เป็น 1.05 เพื่อให้ขยายแทนที่จะหด */
+}
+
+.movie-image {
+  width: 100%; /* ตัวกำหนดขนาดรูป */
+  height: auto;
+  display: block;
+}
+
+.movie-title {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px; /* ปรับขนาดฟอนต์ให้เข้ากับขนาดเล็ก */
+  text-align: center; /* จัดข้อความ 'Spiderman (2025)' ในการ์ดให้อยู่กลาง */
+  color: #333;
+}
+
+.movie-list {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.movie-list h3 {
+  color: #03c7ce;
+  margin-bottom: 15px;
+}
+
+.movie-list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.movie-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
